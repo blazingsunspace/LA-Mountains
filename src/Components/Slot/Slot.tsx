@@ -1,18 +1,17 @@
-import React, { Suspense } from "react";
 
+import History from "../History/History";
+import Climb from "../Climb/Climb";
 type navigationSlotComponetType = {
 	navigationSlotComponet: string;
-};
+}
 
 const Slot = ({ navigationSlotComponet }: navigationSlotComponetType) => {
 
-	const LazyComponent = React.lazy(() => import(/* @vite-ignore */navigationSlotComponet));
+
 	return (
-		<div>
-			<Suspense fallback={<div>Loading...</div>}>
-				<LazyComponent />
-			</Suspense>
-		</div>
+
+		navigationSlotComponet === 'history' ? <History /> : <Climb />
+
 	);
 };
 

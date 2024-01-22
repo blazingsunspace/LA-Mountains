@@ -16,13 +16,13 @@ export const navigationObject: NavigationObjectType[] = [
         navigationAnchorId: "history",
         navigationAnchor: "#history",
         navigationLabel: "01. History",
-        navigationSlotComponet: "../History/History"
+        navigationSlotComponet: "history"
     },
     {
         navigationAnchorId: "team",
         navigationAnchor: "#team",
         navigationLabel: "02. Team",
-        navigationSlotComponet: "../Climb/Climb"
+        navigationSlotComponet: "climb"
     },
 ];
 
@@ -45,19 +45,19 @@ export type TabsType = {
 
 
 export const tabsContent: TabsType = {
-    tablist: ["MOUNTAIN1", "MOUNTAIN2", "MOUNTAIN3"],
+    tablist: ["MOUNTAIN1", "MOUNTAIN2"],
     tabPanels: [
         {
             image: imageTab1,
             schedule: [
                 {
-                    date: ["2020-01-01", "2020-01-02"],
+                    date: ["2016-11-25", "2016-11-28"],
                 },
                 {
-                    date: ["2020-02-01", "2020-02-02"],
+                    date: ["2016-12-18"],
                 },
                 {
-                    date: ["2020-03-01"],
+                    date: ["2017-01-07"],
                 },
             ],
         },
@@ -65,29 +65,15 @@ export const tabsContent: TabsType = {
             image: imageTab2,
             schedule: [
                 {
-                    date: ["2020-01-11", "2020-01-02"],
+                    date: ["2016-11-17"],
                 },
                 {
-                    date: ["2020-02-11", "2020-02-12"],
+                    date: ["2016-12-13", "2016-12-28"],
                 },
                 {
-                    date: ["2020-03-11"],
+                    date: ["2017-02-09"],
                 },
             ],
-        },
-        {
-            image: imageTab2,
-            schedule: [
-                {
-                    date: ["2021-01-11", "2020-01-02"],
-                },
-                {
-                    date: ["2021-02-11", "2020-02-12"],
-                },
-                {
-                    date: ["2021-03-11"],
-                },
-            ],
-        },
+        }
     ],
 };
