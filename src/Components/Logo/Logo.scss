@@ -1,0 +1,21 @@
+.logo {
+	width: 3rem;
+	&.frame {
+		box-shadow: 0 0 0 8px inset #bcc3c6;
+		outline: 1px solid #bcc3c6;
+	}
+}
+@media (min-width: 0px) {
+	.header {
+		.additionalText {
+			display: none;
+		}
+	}
+}
+@media (min-width: 400px) {
+	.header {
+		.additionalText {
+			display: block;
+		}
+	}
+}

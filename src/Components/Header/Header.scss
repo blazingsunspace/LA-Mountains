@@ -1,0 +1,60 @@
+$padding: 1rem calc((100dvw - 1200px) / 2);
+.navDiv {
+    padding: $padding;
+    .headerContainer {
+        top: 0;
+        z-index: 1;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .logo {
+            padding: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &.bottomMenu {
+            ul {
+                color: black;
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) {
+    .header {
+        background-image: url(/src/assets/images/header-background.jpg);
+        min-height: 53dvh;
+        background-position: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .header{
+        .headerBackround{
+            display: none;
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .header {
+        background-image: none;
+        min-height: auto;
+        background-position: unset;
+        background-size: unset;
+        background-repeat: unset;
+        overflow: hidden;
+    }
+    .header{
+        .headerBackround{
+            display: block;
+        }
+    }
+}

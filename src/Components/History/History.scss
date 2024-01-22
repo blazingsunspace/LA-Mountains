@@ -1,0 +1,25 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background-image: url("../../assets/images/peak.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .historyHeadingDiv {
+   
+        float: left;
+        position: relative;
+        top: 0;
+        .historyParagraph {
+            padding: 0 5rem;
+            position: relative;
+            bottom: 2rem;
+        }
+    }
+    .historyBottomDiv {
+        background: rgba(11, 79, 115, 0.7019607843);
+        margin-top: auto;
+ 
+    }
+}
