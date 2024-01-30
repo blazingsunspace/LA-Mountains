@@ -17,14 +17,14 @@
   font-family: "Bebas Regular";
   src: url("./assets/fonts/Bebas/Bebas-Regular.ttf") format("truetype");
 }
-.bebasRegular{
+.bebasRegular {
   font-family: "Bebas Regular";
 }
 .latoLight {
   font-family: "Lato Light";
 }
-.oswaldBold{
-    font-family: "Oswald Bold";
+.oswaldBold {
+  font-family: "Oswald Bold";
 }
 .maxH550px {
   max-height: 550px;
@@ -37,14 +37,15 @@
 }
 .w350px {
   width: 350px;
+  max-width: calc(100% - 2rem);
 }
-.o0dot5{
+.o0dot5 {
   opacity: 0.5;
 }
 .o0dot7 {
   opacity: 0.7;
 }
-.o1{
+.o1 {
   opacity: 1;
 }
 .App {
@@ -109,6 +110,9 @@
 .db {
   display: block;
 }
+.dn {
+  display: none;
+}
 .aic {
   align-items: center;
 }
@@ -130,7 +134,7 @@
 .g3 {
   gap: 3rem;
 }
-.fs16{
+.fs16 {
   font-size: 16px;
 }
 .fs21 {
@@ -139,10 +143,10 @@
 .fs22 {
   font-size: 22px;
 }
-.fs25{
+.fs25 {
   font-size: 25px;
 }
-.lh1{
+.lh1 {
   line-height: 1;
 }
 .tdu {
@@ -163,6 +167,9 @@
 .w100 {
   width: 100%;
 }
+.w32px {
+  width: 32px;
+}
 .posabsolute {
   position: absolute;
 }
@@ -170,6 +177,9 @@
   position: relative;
 }
 .fdc {
+  flex-direction: column;
+}
+.fdcres {
   flex-direction: column;
 }
 .cBlack {
@@ -184,8 +194,6 @@
 .lsn {
   list-style: none;
 }
-
-
 
 .pl2 {
   padding-left: 2rem;
@@ -267,6 +275,7 @@ body {
     padding: 1rem;
   }
 }
+
 .pt0 {
   padding-top: 0;
 }
@@ -281,4 +290,12 @@ body {
 }
 .pb1 {
   padding-bottom: 1rem;
+}
+@media (min-width: 600px) {
+  .fdcres {
+    flex-direction: row;
+  }
+}
+.zi1 {
+  z-index: 1;
 }

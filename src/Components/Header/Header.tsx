@@ -17,6 +17,7 @@ const Header = () => {
 					<Navigation
 						colorClass={"cWhite"}
 						navigationArray={navigationObject}
+						showLanguageSelector
 					/>
 				</div>
 				<div className="df paddings posabsolute w100 aic b0 bWhite">
@@ -24,6 +25,7 @@ const Header = () => {
 					<Navigation
 						colorClass={"cPrimary"}
 						navigationArray={navigationObject}
+						showLanguageSelector
 					/>
 				</div>
 			</header>

@@ -1,14 +1,11 @@
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
-import Main from "./Components/Main/Main";
+
 import "./App.scss";
+import Home from "./Pages/Home/Home";
 
 function App() {
 	return (
 		<>
-			<Header />
-			<Main />
-			<Footer />
+			<Home />
 		</>
 	);
 }

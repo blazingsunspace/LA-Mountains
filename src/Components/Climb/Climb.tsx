@@ -5,7 +5,7 @@ import Tabs from "../Tabs/Tabs";
 const Climb = () => {
 	return (
 		<section id="team">
-			<div className="df jcc g1 aic paddings pb0 pt0">
+			<div className="df fdcres jcc g1 aic paddings pb0 pt0">
 				<DropCap dropCapNumber={"02"} dropCapDecoraterLabel={"Climb"} />
 				<p className="textInfo latoLight">
 					Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida

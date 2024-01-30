@@ -1,11 +1,17 @@
 import { NavigationObjectType } from "../../data/data";
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 import "./Navigation.scss";
 
 type NavigationType = {
 	colorClass?: string;
 	navigationArray?: NavigationObjectType[];
+	showLanguageSelector?: boolean;
 };
-const Navigation = ({ colorClass, navigationArray }: NavigationType) => {
+const Navigation = ({
+	colorClass,
+	navigationArray,
+	showLanguageSelector,
+}: NavigationType) => {
 	return (
 		<nav className="mla" id="navigation">
 			<ul className={`navigationText fsi df aic mr1 mla lsn ${colorClass}`}>
@@ -16,6 +22,7 @@ const Navigation = ({ colorClass, navigationArray }: NavigationType) => {
 						</li>
 					);
 				})}
+				{showLanguageSelector && <LanguageSelector />}
 			</ul>
 		</nav>
 	);

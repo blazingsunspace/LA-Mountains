@@ -9,6 +9,8 @@ type LogoType = {
 };
 
 const Logo = ({ additionalText, cPrimary, logoBorder }: LogoType) => {
+
+
 	return (
 		<div className="df g1">
 			<img
@@ -17,7 +19,9 @@ const Logo = ({ additionalText, cPrimary, logoBorder }: LogoType) => {
 				alt="Introducion page"
 			/>
 			{additionalText && (
-				<div className={`additionalText fs25 lh1 df fdc jcc bebasRegular ${cPrimary}`}>
+				<div
+					className={`additionalText fs25 lh1 df fdc jcc bebasRegular ${cPrimary}`}
+				>
 					<p className="m0">LOSANGELES</p>
 					<p className="m0">MOUNTAINS</p>
 				</div>
