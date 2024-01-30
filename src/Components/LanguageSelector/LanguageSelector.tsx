@@ -14,7 +14,6 @@ import { RootState } from "../../store/store";
 const LanguageSelector = () => {
 	const [languageOpened, setLanguageOpened] = useState(0);
 	const [languageItemsOpened, setLanguageItemsOpened] = useState("0");
-	/* const [defaultLanguage, setDefaultLanguage] = useState(USA); */
 
 	const defaultLanguage = useSelector(
 		(state: RootState) => state.reducer.defaultLanguage
@@ -27,7 +26,7 @@ const LanguageSelector = () => {
 		(state: RootState) => state.reducer.chosenLanguage
 	);
 
-	const { t, i18n } = useTranslation(["home", "main"]);
+	const { t, i18n } = useTranslation();
 	const dispatch = useDispatch();
 	const onClickLanguageChange = (e: React.MouseEvent<HTMLElement>) => {
 		const language = e.currentTarget.dataset.platform ?? "en-US";
@@ -107,7 +106,7 @@ const LanguageSelector = () => {
 						onClick={onClickLanguageChange}
 					>
 						<img className="w32px" src={USA} alt="" />
-						<span>English</span>
+						<span>{t("English")}</span>
 					</span>
 					<span
 						data-platform="sr-RS"
@@ -115,7 +114,7 @@ const LanguageSelector = () => {
 						onClick={onClickLanguageChange}
 					>
 						<img className="w32px" src={SRB} alt="" />
-						<span>Serbian</span>
+						<span>{t("Serbian")}</span>
 					</span>
 				</div>
 			</div>

@@ -10,5 +10,7 @@
     "SIGN_UP_FILE_UPLOAD_ERROR_one": "File upload: error ocured. try again.",
     "SIGNUP_PAGE_one": "{\ntitle: \"Signup Here\",\nsubtitle: \"Create an account now\"\n}",
     "TEST_PREVOD_one": "Test Translate",
-    "TEST_PREVOD_other": "test prevodi"
+    "TEST_PREVOD_other": "test prevodi",
+    "English": "English",
+    "Serbian": "Serbian"
 }

@@ -2,8 +2,8 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import Backend from "i18next-http-backend";
 //Import all translation files
-import translationEnglish from "../Translation/en-US.json";
-import tranaslationSerbian from "../Translation/sr-Latin.json";
+import translationEnglish from "../Translation/en.json";
+import tranaslationSerbian from "../Translation/sr.json";
 /* import { store } from "../store/store"; */
 
 //---Using translation
@@ -30,7 +30,7 @@ const defaultLanguage = JSON.parse(
 	JSON.parse(localStorage?.getItem("persist:root") ?? "").reducer
 ).defaultLanguage;
 
-console.log(defaultLanguage);
+
 const resources = {
 	"en-US": {
 		translation: translationEnglish,
