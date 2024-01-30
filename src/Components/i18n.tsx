@@ -25,11 +25,16 @@ import tranaslationSerbian from "../Translation/sr-Latn.json";
 	"lrs",
 	
 ); */
+let lanquageDefaultSelected;
+try {
+	lanquageDefaultSelected = JSON.parse(
+		JSON.parse(localStorage?.getItem("persist:root") ?? "").reducer
+	).defaultLanguage;
+} catch (error) {
+	lanquageDefaultSelected = "en-US";
+}
 
-const defaultLanguage = JSON.parse(
-	JSON.parse(localStorage?.getItem("persist:root") ?? "").reducer
-).defaultLanguage;
-
+const defaultLanguage = lanquageDefaultSelected;
 
 const resources = {
 	"en-US": {

@@ -10,6 +10,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import i18n from "./Components/i18n.tsx";
 
 const presistor = persistStore(store);
+
 const Loading = () => <div>Loading...</div>;
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
