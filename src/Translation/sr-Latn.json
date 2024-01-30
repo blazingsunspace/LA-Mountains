@@ -1,9 +1,6 @@
 {
   "English": "Engleski",
+  "History": "Istorija",
   "Serbian": "Srpski",
-  "Test_string": {
-    "one": "testualni string",
-    "few": "testualnih stringova",
-    "other": "testualni stringovi"
-  }
+  "Team": "Tim"
 }

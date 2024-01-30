@@ -44,7 +44,7 @@ if (response) {
 
 				let tempData = {};
 				for (let i = 0; i < terms.length; i++) {
-					tempData[terms[i].term + "_one"] =
+					tempData[terms[i].term] =
 						terms[i].translation.content.one ?? terms[i].translation.content;
 
 					terms[i].plural !== ""

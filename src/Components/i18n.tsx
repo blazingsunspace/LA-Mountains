@@ -2,8 +2,8 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import Backend from "i18next-http-backend";
 //Import all translation files
-import translationEnglish from "../Translation/en.json";
-import tranaslationSerbian from "../Translation/sr.json";
+import translationEnglish from "../Translation/en-US.json";
+import tranaslationSerbian from "../Translation/sr-Latn.json";
 /* import { store } from "../store/store"; */
 
 //---Using translation
