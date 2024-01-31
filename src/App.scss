@@ -235,10 +235,13 @@
   color: white;
 }
 .cBlack {
-  color: black;
+  color: #4d4d4d;
 }
 .cPrimary {
   color: #414f6b;
+}
+.cPrimaryDark {
+  color: #333e54;
 }
 .bPrimary {
   background-color: #414f6b;
@@ -298,4 +301,11 @@ body {
 }
 .zi1 {
   z-index: 1;
+}
+
+.zi2{
+  z-index: 2;
+}
+.zi10{
+  z-index: 10;
 }
