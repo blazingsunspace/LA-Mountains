@@ -7,9 +7,6 @@ import {
 } from "redux-persist";
 import { combineReducers } from "@reduxjs/toolkit";
 
-console.log(storage.getItem('persist:root'));
-
-
 const presistConfig = {
   key: "root",
   version: 1,

@@ -1,6 +1,7 @@
 
 import "./Schedule.scss";
 import { DateArrayType, MountainType } from "../Mountain/Mountain";
+import { Container } from "../../theme";
 
 const Schedule = ({ schedule }: MountainType) => {
 
@@ -20,7 +21,7 @@ const Schedule = ({ schedule }: MountainType) => {
 	}
 
 	return (
-		<div className="ml1 w350px bWhite o0dot7 pt1 pb1 pl2 pr2 mt5">
+		<Container className="ml1 w350px o0dot7 pt1 pb1 pl2 pr2 mt5">
 			<h2 className="oswaldBold fs">SCHEDULE</h2>
 			{schedule.map((item: DateArrayType, index: number) => (
 				<div key={index} className="mt1 mb1">
@@ -32,7 +33,7 @@ const Schedule = ({ schedule }: MountainType) => {
 					))}
 				</div>
 			))}
-		</div>
+		</Container>
 	);
 };
 

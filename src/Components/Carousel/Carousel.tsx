@@ -1,5 +1,5 @@
 import "./Carousel.scss";
-
+import { CarouselBackground } from "../../theme";
 export type CarouselType = {
 	imageArray?: string[];
 };
@@ -28,7 +28,7 @@ const Carousel = ({ imageArray }: CarouselType) => {
 
 	return (
 		<>
-			<div className="historyBottomDiv paddings df fdc">
+			<CarouselBackground className="historyBottomDiv paddings df fdc mb0">
 				<div className="slider pt1">
 					<div className="slides">
 						{imageArray?.map((image, index) => {
@@ -56,7 +56,7 @@ const Carousel = ({ imageArray }: CarouselType) => {
 						);
 					})}
 				</div>
-			</div>
+			</CarouselBackground>
 		</>
 	);
 };

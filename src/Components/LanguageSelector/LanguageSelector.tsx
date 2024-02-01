@@ -11,6 +11,8 @@ import {
 	setChosenLanguage,
 } from "../../store/reducer";
 import { RootState } from "../../store/store";
+
+import { LanguageContainer } from "../../theme";
 const LanguageSelector = () => {
 	const [languageOpened, setLanguageOpened] = useState(0);
 	const [languageItemsOpened, setLanguageItemsOpened] = useState("0");
@@ -99,7 +101,7 @@ const LanguageSelector = () => {
 						/>
 					</div>
 				</div>
-				<div className={`noselect languageList ${languageItemsOpened}`}>
+				<LanguageContainer className={`noselect languageList ${languageItemsOpened}`}>
 					<span
 						className={`languageListCell ${chosenLanguage["en-US"]}`}
 						data-platform="en-US"
@@ -116,7 +118,7 @@ const LanguageSelector = () => {
 						<img className="w32px" src={SRB} alt="" />
 						<span>{t("Serbian")}</span>
 					</span>
-				</div>
+				</LanguageContainer>
 			</div>
 		</div>
 	);

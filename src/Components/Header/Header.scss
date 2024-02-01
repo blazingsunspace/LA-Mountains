@@ -25,7 +25,7 @@ $padding: 1rem calc((100dvw - 1200px) / 2);
     }
 }
 .parallax {
-    /* overflow: hidden; */
+   
     position: relative;
     z-index: 0;
 }
@@ -37,22 +37,16 @@ $padding: 1rem calc((100dvw - 1200px) / 2);
 
 .primary-header,
 .hero {
-    --parallax-speed: 3;
-    z-index: 10;
+    --parallax-speed: 33;
 }
 .parallax__bg1 {
-    --parallax-speed: 2;
-
-    z-index: 0;
+    --parallax-speed: 6;
 }
 .parallax__bg2 {
     --parallax-speed: 4;
-
-    z-index: 4;
 }
 .parallax__dust {
-    --parallax-speed: 5;
-    z-index: 5;
+    --parallax-speed:-6;
 }
 @keyframes parallax {
     to {
@@ -67,15 +61,17 @@ $padding: 1rem calc((100dvw - 1200px) / 2);
     }
     .secondHeaderBackground {
         width: 100%;
-        filter: drop-shadow(2px 4px 76px white);
+        filter: drop-shadow(0px 0px 76px #ffffff7a);
     }
     .snow {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 5000px;
         opacity: 0.3;
-        filter: drop-shadow(2px 4px 87px white);
-        background: white;
+
+        background-color: white;
+        background-image: url(/src/assets/images/snow.png);
+        background-repeat: repeat;
     }
     .mainTitle {
         display: flex;

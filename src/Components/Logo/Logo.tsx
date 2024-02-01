@@ -1,6 +1,7 @@
-import logoImage from "../../assets/images/logo.svg";
 
+import {  useSelector } from "react-redux";
 import "./Logo.scss";
+import { RootState } from "../../store/store";
 
 type LogoType = {
 	additionalText?: boolean;
@@ -9,8 +10,11 @@ type LogoType = {
 };
 
 const Logo = ({ additionalText, cPrimary, logoBorder }: LogoType) => {
-
-
+	
+	const logoImage = useSelector(
+		(state: RootState) => state.reducer.logoImage
+	);
+	console.log('krma', logoImage)
 	return (
 		<div className="df g1">
 			<img

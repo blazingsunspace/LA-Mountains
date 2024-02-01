@@ -3,9 +3,11 @@ import Navigation from "../Navigation/Navigation";
 
 import topPart from "../../assets/images/topPart.png";
 import bottomPart from "../../assets/images/bottomPart.png";
-import snow from "../../assets/images/snow.png";
+
 import "./Header.scss";
 import { useTranslation } from "react-i18next";
+
+import { Container } from "../../theme";
 
 const Header = () => {
 	const { t } = useTranslation();
@@ -32,14 +34,15 @@ const Header = () => {
 					src={topPart}
 					alt="headerBackground"
 				></img>
-				<h1 className="mainTitle bebasRegular hero">
+				<h1 className="mainTitle bebasRegular hero parallax__bg2">
 					<p className="cBlack m0 m0 firstParagrafHeader">LOSANGELES</p> <br />
 					<p className="cPrimaryDark m0 gradient-text ">MOUNTAINS</p>
 				</h1>
 				<img src={bottomPart} alt="" className="zi10 secondHeaderBackground " />
 
-				<img src={snow} alt="" className="snow parallax__dust" />
-				<div className="df paddings posabsolute w100 aic zi10">
+				<div className="snow parallax__dust zi90"></div>
+
+				<div className="df paddings posabsolute w100 aic zi100">
 					<Logo />
 					<Navigation
 						colorClass={"cWhite"}
@@ -47,13 +50,19 @@ const Header = () => {
 						showLanguageSelector
 					/>
 				</div>
-				<div className="df paddings posabsolute w100 aic b0 bWhite zi10">
+				<Container className="df paddings posabsolute w100 aic b0 zi100">
 					<Logo logoBorder={true} additionalText={true} cPrimary={"cPrimary"} />
 					<Navigation
 						colorClass={"cPrimary"}
 						navigationArray={navigationObject}
+						useTheme
 					/>
-				</div>
+
+
+				</Container>
+
+
+
 			</header>
 		</>
 	);

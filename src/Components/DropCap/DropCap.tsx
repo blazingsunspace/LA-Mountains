@@ -1,6 +1,6 @@
 
 import './DropCap.scss'
-
+import { DropCapP, DropCapPDecorater } from "../../theme";
 
 
 type DropCapType = {
@@ -12,8 +12,8 @@ type DropCapType = {
 const DropCap = ({ className, dropCapNumber, dropCapDecoraterLabel }: DropCapType) => {
 	return (
 		<div className={`dropCapContainer ${className}`}>
-			<p className="dropCap">{dropCapNumber}.</p>
-			<p className="dropCapDecorater oswaldBold">{dropCapDecoraterLabel}</p>
+			<DropCapP className="dropCap">{dropCapNumber}.</DropCapP>
+			<DropCapPDecorater className="dropCapDecorater oswaldBold">{dropCapDecoraterLabel}</DropCapPDecorater>
 		</div>
 	);
 };
